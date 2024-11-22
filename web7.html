@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>documento</title>
+    </head>
+    <body>
+        <h1>javascript</h1>
+        <script>
+            console.log('hola mundo');
+            a=10;
+            if(a>5)
+                console.log('es mayor a 5');
+            else 
+                console.log('es menor a 5');
+            b=a>9?'mayor':'menor';
+            console.log('dato de b '+b);
+
+            for(i=2;i<100;i=i+4){                
+                document.writeln('<li>'+i+'</li>');
+                
+            }
+            i=i+2;
+            var z = 1 ;
+            let x,y;
+            x = 8;
+            y = x*2;
+            const nombre = 'juan';
+            console.log(nombre);
+            //nombre='patricia'; //no se puede asignar datos a una variable const 
+            console.log(nombre);
+            {
+                let edad = 19;
+                //var edad = 19;
+                console.log(edad);
+            }
+            //console.log(edad);
+            let ci=13245;
+            let apellidos= 'torrez';
+            let tarjetaCredito=true;
+            let persona = {
+                nombre: 'juanito',
+                apellido: 'mamani',
+                edad:21
+            }
+            let autos = ['bmw', 'audi','changang'];
+            let nacimiento = new Date('2000-12-25');
+            console.log ("nacimiento", nacimiento);
+            let grande = BigInt(1234567891234567890022558899);
+            console.log(grande);
+            ////funciones 
+            function sumar(a,b){
+                return a+b;
+            } 
+            console.log(sumar(2323,3333));
+            sumar2 = (a,b)=> a+b;
+            console.log(sumar2(3,7));
+            console.log(sumar3(3,7));
+            let datos = prompt('dame una informacion');
+            console.log(datos);
+            alert('existe datos leidos '+datos);
+
+
+
+
+
+            serie=(n)=>{
+                let a=2, b=8;aux;
+                while(--n>0){
+                    aux = a+a+b;
+                    document.write(', '+a);
+                    a=b;
+                    b=aux;
+                }
+            }
+            let n = prompt('cuantos numeros generar');
+            serie (n);
+            </script>
+    </body>
+</html>
